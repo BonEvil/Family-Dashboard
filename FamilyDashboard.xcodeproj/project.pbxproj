@@ -14,6 +14,7 @@
 		6B8F4CD41F7AF82900E59F11 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CD31F7AF82900E59F11 /* LocationController.swift */; };
 		6B8F4CD61F7B118900E59F11 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CD51F7B118900E59F11 /* EventDetailViewController.swift */; };
 		6B8F4CDA1F7B214D00E59F11 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CD91F7B214D00E59F11 /* CalendarViewController.swift */; };
+		6B8F4CDC1F7C62E000E59F11 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CDB1F7C62E000E59F11 /* SettingsViewController.swift */; };
 		6BF194681F796C3D00B8C03A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF194671F796C3D00B8C03A /* AppDelegate.swift */; };
 		6BF1946D1F796C3D00B8C03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1946B1F796C3D00B8C03A /* Main.storyboard */; };
 		6BF1946F1F796C3D00B8C03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1946E1F796C3D00B8C03A /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		6B8F4CD31F7AF82900E59F11 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
 		6B8F4CD51F7B118900E59F11 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		6B8F4CD91F7B214D00E59F11 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		6B8F4CDB1F7C62E000E59F11 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6BF194641F796C3D00B8C03A /* FamilyDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF194671F796C3D00B8C03A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BF1946C1F796C3D00B8C03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				6B8F4CD01F7AD1C300E59F11 /* TrafficViewController.swift */,
 				6B8F4CD51F7B118900E59F11 /* EventDetailViewController.swift */,
 				6B8F4CD91F7B214D00E59F11 /* CalendarViewController.swift */,
+				6B8F4CDB1F7C62E000E59F11 /* SettingsViewController.swift */,
 			);
 			name = "User Interface";
 			sourceTree = "<group>";
@@ -254,10 +257,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FamilyDashboard/Pods-FamilyDashboard-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DPSessionManager/DPSessionManager.framework",
+				"${BUILT_PRODUCTS_DIR}/GCCalendar/GCCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DPSessionManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -279,6 +284,7 @@
 				6B8F4CD41F7AF82900E59F11 /* LocationController.swift in Sources */,
 				6B8F4CD61F7B118900E59F11 /* EventDetailViewController.swift in Sources */,
 				6B8F4CC11F7AA62D00E59F11 /* MainViewModel.swift in Sources */,
+				6B8F4CDC1F7C62E000E59F11 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
