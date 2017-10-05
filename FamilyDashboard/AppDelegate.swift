@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.isIdleTimerDisabled = true
         GMSServices.provideAPIKey("AIzaSyAZHjud8E3PDaJlLt0hAkbwwwdnshryBuA")
+        BaseService.baseUrl = "http://192.168.1.100:8081"
         
         return true
     }

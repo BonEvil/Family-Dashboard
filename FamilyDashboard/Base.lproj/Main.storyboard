@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owo-UG-xsi">
-                                <rect key="frame" x="24" y="44" width="24" height="24"/>
+                                <rect key="frame" x="24" y="44" width="32" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="WfL-Ul-OrH"/>
-                                    <constraint firstAttribute="width" constant="24" id="WuY-Gd-2OE"/>
+                                    <constraint firstAttribute="height" constant="32" id="WfL-Ul-OrH"/>
+                                    <constraint firstAttribute="width" constant="32" id="WuY-Gd-2OE"/>
                                 </constraints>
                                 <state key="normal" image="Close"/>
                                 <connections>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfU-J6-BQQ" customClass="GCCalendarView" customModule="GCCalendar">
-                                <rect key="frame" x="0.0" y="90" width="1024" height="678"/>
+                                <rect key="frame" x="0.0" y="98" width="1024" height="670"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -142,6 +142,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2W4-Lg-7ve"/>
+                                    <segue destination="Rbq-t4-bHM" kind="show" identifier="showShoppingList" id="n01-aq-lE9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRA-5y-vug">
@@ -404,6 +405,99 @@
             </objects>
             <point key="canvasLocation" x="109.5703125" y="131.25"/>
         </scene>
+        <!--Shopping Item View Controller-->
+        <scene sceneID="4ir-aK-Ofw">
+            <objects>
+                <viewController id="Rbq-t4-bHM" customClass="ShoppingItemViewController" customModule="FamilyDashboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XVE-e2-SwC"/>
+                        <viewControllerLayoutGuide type="bottom" id="n3Y-uo-vRq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YiR-Y9-MgD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqm-rm-IzF">
+                                <rect key="frame" x="20" y="44" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="K28-8s-cLf"/>
+                                    <constraint firstAttribute="width" constant="32" id="itp-Fr-cxo"/>
+                                </constraints>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Rbq-t4-bHM" eventType="touchUpInside" id="EGq-sZ-Fia"/>
+                                    <action selector="buttonTapped:" destination="bBp-Uj-7H7" eventType="touchUpInside" id="crT-Dg-LMl"/>
+                                    <action selector="buttonTapped:" destination="Yhq-e9-qCT" eventType="touchUpInside" id="sV5-yX-5pM"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wdi-Ae-Laa">
+                                <rect key="frame" x="352" y="68" width="320" height="700"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Snk-UC-FiQ"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CheckboxCell" id="StM-pn-StU" customClass="CheckboxTableViewCell" customModule="FamilyDashboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="StM-pn-StU" id="E7z-XX-HwD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hE-VF-KKj">
+                                                    <rect key="frame" x="8" y="5" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="C5V-nI-dig"/>
+                                                        <constraint firstAttribute="height" constant="32" id="M9R-6Y-X67"/>
+                                                    </constraints>
+                                                    <state key="normal" image="CheckboxOff">
+                                                        <color key="titleColor" red="0.0" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="itemLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygu-Ed-mhW">
+                                                    <rect key="frame" x="48" y="11" width="264" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="jzT-UY-3jZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4hE-VF-KKj" firstAttribute="leading" secondItem="E7z-XX-HwD" secondAttribute="leadingMargin" id="eIB-Xe-evc"/>
+                                                <constraint firstItem="Ygu-Ed-mhW" firstAttribute="trailing" secondItem="E7z-XX-HwD" secondAttribute="trailingMargin" id="jcZ-5a-xtZ"/>
+                                                <constraint firstItem="4hE-VF-KKj" firstAttribute="centerY" secondItem="E7z-XX-HwD" secondAttribute="centerY" id="tnX-dg-rjG"/>
+                                                <constraint firstItem="Ygu-Ed-mhW" firstAttribute="leading" secondItem="4hE-VF-KKj" secondAttribute="trailing" constant="8" id="wCk-Gq-nS5"/>
+                                                <constraint firstItem="Ygu-Ed-mhW" firstAttribute="centerY" secondItem="4hE-VF-KKj" secondAttribute="centerY" id="zoO-gi-2Sx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkboxButton" destination="4hE-VF-KKj" id="6gt-73-bDW"/>
+                                            <outlet property="itemLabel" destination="Ygu-Ed-mhW" id="KUH-dj-Xag"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yqm-rm-IzF" firstAttribute="leading" secondItem="YiR-Y9-MgD" secondAttribute="leadingMargin" id="DT9-wI-gY3"/>
+                            <constraint firstItem="yqm-rm-IzF" firstAttribute="top" secondItem="XVE-e2-SwC" secondAttribute="bottom" constant="24" id="O94-8W-OTt"/>
+                            <constraint firstItem="Wdi-Ae-Laa" firstAttribute="centerX" secondItem="YiR-Y9-MgD" secondAttribute="centerX" id="eZh-Bx-LFK"/>
+                            <constraint firstItem="Wdi-Ae-Laa" firstAttribute="top" secondItem="XVE-e2-SwC" secondAttribute="bottom" constant="48" id="sfi-6L-jeK"/>
+                            <constraint firstItem="n3Y-uo-vRq" firstAttribute="top" secondItem="Wdi-Ae-Laa" secondAttribute="bottom" id="ybZ-fF-aZO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="yqm-rm-IzF" id="YVR-ec-zNL"/>
+                        <outlet property="tableView" destination="Wdi-Ae-Laa" id="V4Z-HW-yvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPl-UV-vRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543.1640625" y="903.90625"/>
+        </scene>
         <!--Settings View Controller-->
         <scene sceneID="RxW-6I-cFQ">
             <objects>
@@ -457,10 +551,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cga-B3-UYB">
-                                <rect key="frame" x="24" y="44" width="24" height="24"/>
+                                <rect key="frame" x="24" y="44" width="32" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="JeU-Z7-ab1"/>
-                                    <constraint firstAttribute="width" constant="24" id="u9v-00-awv"/>
+                                    <constraint firstAttribute="height" constant="32" id="JeU-Z7-ab1"/>
+                                    <constraint firstAttribute="width" constant="32" id="u9v-00-awv"/>
                                 </constraints>
                                 <state key="normal" image="Close"/>
                                 <connections>
@@ -503,6 +597,7 @@
     </scenes>
     <resources>
         <image name="Calendar" width="36" height="36"/>
+        <image name="CheckboxOff" width="36" height="36"/>
         <image name="Close" width="36" height="36"/>
         <image name="Dinner" width="150" height="150"/>
         <image name="Home" width="150" height="150"/>

@@ -15,6 +15,14 @@
 		6B8F4CD61F7B118900E59F11 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CD51F7B118900E59F11 /* EventDetailViewController.swift */; };
 		6B8F4CDA1F7B214D00E59F11 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CD91F7B214D00E59F11 /* CalendarViewController.swift */; };
 		6B8F4CDC1F7C62E000E59F11 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CDB1F7C62E000E59F11 /* SettingsViewController.swift */; };
+		6B8F4CDF1F7C85BD00E59F11 /* GetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CDE1F7C85BD00E59F11 /* GetService.swift */; };
+		6B8F4CE11F7C871000E59F11 /* GetShoppingItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CE01F7C871000E59F11 /* GetShoppingItemService.swift */; };
+		6B8F4CE31F7C88F800E59F11 /* ShoppingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CE21F7C88F800E59F11 /* ShoppingItemViewController.swift */; };
+		6B8F4CE51F7C894300E59F11 /* ShoppingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CE41F7C894300E59F11 /* ShoppingItemViewModel.swift */; };
+		6B8F4CE71F7DAE2600E59F11 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CE61F7DAE2600E59F11 /* CheckboxTableViewCell.swift */; };
+		6B8F4CE91F7DBE7000E59F11 /* PutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CE81F7DBE7000E59F11 /* PutService.swift */; };
+		6B8F4CEB1F7DBE8A00E59F11 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CEA1F7DBE8A00E59F11 /* BaseService.swift */; };
+		6B8F4CED1F7DBF4D00E59F11 /* PutShoppingItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F4CEC1F7DBF4D00E59F11 /* PutShoppingItemService.swift */; };
 		6BF194681F796C3D00B8C03A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF194671F796C3D00B8C03A /* AppDelegate.swift */; };
 		6BF1946D1F796C3D00B8C03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1946B1F796C3D00B8C03A /* Main.storyboard */; };
 		6BF1946F1F796C3D00B8C03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1946E1F796C3D00B8C03A /* Assets.xcassets */; };
@@ -31,6 +39,14 @@
 		6B8F4CD51F7B118900E59F11 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		6B8F4CD91F7B214D00E59F11 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		6B8F4CDB1F7C62E000E59F11 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6B8F4CDE1F7C85BD00E59F11 /* GetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetService.swift; sourceTree = "<group>"; };
+		6B8F4CE01F7C871000E59F11 /* GetShoppingItemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetShoppingItemService.swift; sourceTree = "<group>"; };
+		6B8F4CE21F7C88F800E59F11 /* ShoppingItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemViewController.swift; sourceTree = "<group>"; };
+		6B8F4CE41F7C894300E59F11 /* ShoppingItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemViewModel.swift; sourceTree = "<group>"; };
+		6B8F4CE61F7DAE2600E59F11 /* CheckboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxTableViewCell.swift; sourceTree = "<group>"; };
+		6B8F4CE81F7DBE7000E59F11 /* PutService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutService.swift; sourceTree = "<group>"; };
+		6B8F4CEA1F7DBE8A00E59F11 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		6B8F4CEC1F7DBF4D00E59F11 /* PutShoppingItemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutShoppingItemService.swift; sourceTree = "<group>"; };
 		6BF194641F796C3D00B8C03A /* FamilyDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF194671F796C3D00B8C03A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BF1946C1F796C3D00B8C03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +87,18 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		6B8F4CDD1F7C858000E59F11 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F4CEA1F7DBE8A00E59F11 /* BaseService.swift */,
+				6B8F4CDE1F7C85BD00E59F11 /* GetService.swift */,
+				6B8F4CE81F7DBE7000E59F11 /* PutService.swift */,
+				6B8F4CE01F7C871000E59F11 /* GetShoppingItemService.swift */,
+				6B8F4CEC1F7DBF4D00E59F11 /* PutShoppingItemService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		6BF1945B1F796C3D00B8C03A = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +123,7 @@
 				6B8F4CD21F7AF81400E59F11 /* Controllers */,
 				6BF194791F79750000B8C03A /* Application Delegate */,
 				6BF1947A1F79750900B8C03A /* User Interface */,
+				6B8F4CDD1F7C858000E59F11 /* Services */,
 				6BF1947B1F79751500B8C03A /* Supporting Files */,
 			);
 			path = FamilyDashboard;
@@ -119,6 +148,9 @@
 				6B8F4CD51F7B118900E59F11 /* EventDetailViewController.swift */,
 				6B8F4CD91F7B214D00E59F11 /* CalendarViewController.swift */,
 				6B8F4CDB1F7C62E000E59F11 /* SettingsViewController.swift */,
+				6B8F4CE21F7C88F800E59F11 /* ShoppingItemViewController.swift */,
+				6B8F4CE41F7C894300E59F11 /* ShoppingItemViewModel.swift */,
+				6B8F4CE61F7DAE2600E59F11 /* CheckboxTableViewCell.swift */,
 			);
 			name = "User Interface";
 			sourceTree = "<group>";
@@ -276,13 +308,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8F4CDF1F7C85BD00E59F11 /* GetService.swift in Sources */,
 				6B8F4CDA1F7B214D00E59F11 /* CalendarViewController.swift in Sources */,
+				6B8F4CE71F7DAE2600E59F11 /* CheckboxTableViewCell.swift in Sources */,
+				6B8F4CE91F7DBE7000E59F11 /* PutService.swift in Sources */,
 				6B3D003A1F79D34E00BB634D /* EventTableViewCell.swift in Sources */,
 				6BF194681F796C3D00B8C03A /* AppDelegate.swift in Sources */,
 				6B8F4CD11F7AD1C300E59F11 /* TrafficViewController.swift in Sources */,
 				6BF1947D1F7975E300B8C03A /* MainViewController.swift in Sources */,
+				6B8F4CEB1F7DBE8A00E59F11 /* BaseService.swift in Sources */,
 				6B8F4CD41F7AF82900E59F11 /* LocationController.swift in Sources */,
 				6B8F4CD61F7B118900E59F11 /* EventDetailViewController.swift in Sources */,
+				6B8F4CE31F7C88F800E59F11 /* ShoppingItemViewController.swift in Sources */,
+				6B8F4CE11F7C871000E59F11 /* GetShoppingItemService.swift in Sources */,
+				6B8F4CE51F7C894300E59F11 /* ShoppingItemViewModel.swift in Sources */,
+				6B8F4CED1F7DBF4D00E59F11 /* PutShoppingItemService.swift in Sources */,
 				6B8F4CC11F7AA62D00E59F11 /* MainViewModel.swift in Sources */,
 				6B8F4CDC1F7C62E000E59F11 /* SettingsViewController.swift in Sources */,
 			);

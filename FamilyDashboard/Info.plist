@@ -43,5 +43,10 @@
 	<string>Used in order to show upcoming events on the main page.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The application uses this information to show you your location.</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>

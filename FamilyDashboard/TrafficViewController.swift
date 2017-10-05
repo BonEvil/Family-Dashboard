@@ -34,7 +34,7 @@ class TrafficViewController: UIViewController {
         super.viewDidLoad()
 
         closeButton = UIButton(type: .system)
-        closeButton.frame = CGRect(x: 24.0, y: 24.0, width: 24.0, height: 24.0)
+        closeButton.frame = CGRect(x: 24.0, y: 24.0, width: 32.0, height: 32.0)
         closeButton.tintColor = UIColor(red: 0, green: 170/255.0, blue: 1, alpha: 1)
         closeButton.setImage(UIImage(named: "Close"), for: .normal)
         closeButton.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
