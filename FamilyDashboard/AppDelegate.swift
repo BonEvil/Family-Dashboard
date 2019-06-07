@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         UIApplication.shared.isIdleTimerDisabled = true
-        GMSServices.provideAPIKey("AIzaSyAZHjud8E3PDaJlLt0hAkbwwwdnshryBuA")
+        GMSServices.provideAPIKey("<YOUR KEY HERE>")
         BaseService.baseUrl = "http://192.168.1.100:8081"
         
         return true
